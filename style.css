@@ -1,0 +1,34 @@
+.heading {
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    border-radius: 10px;
+}
+body {
+    background-color: lightblue;
+}
+b {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+}
+.gesture_emoji {
+    font-size: 30px;
+    margin-right: 3px;
+}
+label {
+    font-size: 20px;
+    background-color: white;
+    color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+#camera , #result {
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px; 
+}
+#emoji1, #emoji2 {
+    font-size: 40px;
+}

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Hand Gestures</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+            <div class="heading btn btn-success">
+                <h3>GESTURE WEB APP</h2>
+                <span>&#9757;</span>
+                <span>&#9994;</span>
+                <span>&#9996;</span>
+                <span>&#9997;</span>
+                <span>&#128076;</span>
+            </div>
+            <br>
+            <br>
+            <b>Take a selfie of a gesture to know it's name</b>
+            <br>
+            <h4 style="color: white">The model is trained on the following gestures</h4>
+            <br>
+            <span class="gesture_emoji">&#9994;</span>
+            <span class="gesture_emoji">&#9996;</span>
+            <span class="gesture_emoji">&#128076;</span>
+            <span class="gesture_emoji">&#128077;</span>
+            <span class="gesture_emoji">&#129304;</span>
+            <br><br>
+            <div class="camera_div col-md-4 col-sm-12 col-xs-12">
+                <label>Webcam</label>
+                <br><br>
+                <div id="camera">
+
+                </div>
+                <br><br>
+                <button class="btn btn-success" style="font-size: 20px;" onclick="takePicture()">Take Picture</button>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Prediction</label>
+                <h2 id="prediction1"></h2>
+                <h3 id="confidence1"></h3>
+                <h3 id="emoji1"></h3>
+                <h2 id="prediction2"></h2>
+                <h3 id="confidence2"></h3>
+                <h3 id="emoji2"></h3>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Result</label>
+                <br><br>
+                <div id="result">
+
+                </div>
+                <br><br>
+                <button class="btn btn-success" style="font-size: 20px;" onclick="check()">Check</button>
+            </div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
